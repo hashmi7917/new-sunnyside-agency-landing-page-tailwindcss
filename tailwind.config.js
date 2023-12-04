@@ -16,7 +16,8 @@ export default {
           Yellow: 'hsl(51, 100%, 49%)',
           DarkDesaturatedCyanGDesignText: 'hsl(167, 40%, 24%)',
           DarkBluePhotographyText: 'hsl(198, 62%, 26%)',
-          DarkModerateCyanFooter: 'hsl(168, 34%, 41%)',
+          DarkModerateCyanFooter: 'hsl(167, 44%, 70%)',
+          FooterText: 'hsl(167, 46%, 31%)',
         },
         neutral: {
           VeryDarkDesaturatedBlue: 'hsl(212, 27%, 19%)',
