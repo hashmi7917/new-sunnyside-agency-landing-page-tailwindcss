@@ -75,7 +75,7 @@ function App() {
                 </button>
               </ul>
             </nav>
-            <h1 className="text-neutral-White text-5xl font-Fraunces uppercase tracking-widest pt-20 lg:w-11/12 mx-auto">
+            <h1 className="text-neutral-White text-5xl xl:text-6xl font-Fraunces uppercase tracking-widest pt-20 lg:w-11/12 mx-auto">
               we are creatives
             </h1>
             <img
