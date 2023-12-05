@@ -21,7 +21,7 @@ import Cubes from './assets/images/mobile/image-gallery-sugar-cubes.jpg';
 
 function App() {
   return (
-    <div className="mx-auto max-w-sm md:max-w-md lg:max-w-xl xl:max-w-full">
+    <div className="mx-auto max-w-sm md:max-w-md lg:max-w-xl xl:max-w-full shadow-xl xl:shadow-none">
       <div
         className="xl:hidden"
         style={{
