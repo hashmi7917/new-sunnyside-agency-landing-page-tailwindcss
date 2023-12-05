@@ -18,32 +18,27 @@ import Cubes from './assets/images/mobile/image-gallery-sugar-cubes.jpg';
 
 function App() {
   return (
-    <div className="w-full mx-auto max-w-md shadow-xl">
-      <header
-        className="flex flex-col text-center relative"
-        style={{
-          minHeight: '100vh',
-          backgroundImage: `url(${HeroBgMob})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <nav className="flex justify-between items-center p-5">
-          <img className="w-30" src={Logo} alt="logo header" />
-          <img className="w-30" src={MenuIcon} alt="hamburger menu" />
-        </nav>
-        <h1 className="text-neutral-White text-5xl font-Fraunces uppercase tracking-widest pt-28">
-          we are creatives
-        </h1>
-        <img
-          className="object-contain h-36 my-auto"
-          src={ArrowDown}
-          alt="arrow"
-        />
+    <div className="mx-auto max-w-sm shadow-xl">
+      <header className="flex flex-col text-center relative">
+        <img className="absolute left-0 top-0" src={HeroBgMob} alt="hero" />
+
+        <div className="flex flex-col z-20">
+          <nav className="flex justify-between items-center p-5">
+            <img className="w-30" src={Logo} alt="logo header" />
+            <img className="w-30" src={MenuIcon} alt="hamburger menu" />
+          </nav>
+          <h1 className="text-neutral-White text-5xl font-Fraunces uppercase tracking-widest pt-20">
+            we are creatives
+          </h1>
+          <img
+            className="object-fill w-10 my-auto self-center pt-16"
+            src={ArrowDown}
+            alt="arrow"
+          />
+        </div>
       </header>
-      <div className="flex flex-col justify-between items-center text-center bg-neutral-White">
-        <img className="" src={TransformBG} alt="" />
+      <div className="flex flex-col justify-between items-center text-center bg-neutral-White mt-28">
+        <img className="w-full" src={TransformBG} alt="" />
         <div className="flex flex-col justify-evenly items-center px-2 py-16 w-10/12">
           <h2 className="font-Fraunces text-4xl">Transform your brand</h2>
           <p className="text-lg text-neutral-DarkGrayishBlue leading-relaxed py-8 w-11/12">
