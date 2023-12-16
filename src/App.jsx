@@ -32,11 +32,38 @@ function App() {
           backgroundPosition: 'center',
         }}
       >
-        <header className="flex flex-col text-center relative">
+        <header className="flex flex-col text-center relative transition-all ease-in-out">
           <div className="flex flex-col z-10">
             <nav className="flex justify-between items-center p-5">
               <img className="w-30" src={Logo} alt="logo header" />
-              <img className="w-30" src={MenuIcon} alt="hamburger menu" />
+              <img
+                id="menubar"
+                className="w-30"
+                src={MenuIcon}
+                alt="hamburger menu"
+                onClick={openNav}
+              />
+              <div
+                id="sidemenu"
+                className="hidden w-full bg-neutral-White text-neutral-VeryDarkGrayishBlue text-center px-12 py-12 absolute right-0 top-24 transition-all ease-in shadow-xl"
+              >
+                <i
+                  onClick={closeNav}
+                  className="fa-solid fa-circle-xmark absolute right-0 top-0 pr-4 pt-4 text-2xl hover:scale-110 transition-all ease-out duration-75 cursor-pointer hover:text-primary-SoftRed"
+                ></i>
+
+                <ul className="w-1/3 flex flex-col justify-around items-center mx-auto h-48 transition-all ease-in-out duration-75">
+                  <li className="cursor-pointer">About</li>
+                  <li className="cursor-pointer">Services</li>
+                  <li className="cursor-pointer">Products</li>
+                  <button
+                    className="bg-primary-Yellow font-Fraunces text-neutral-VeryDarkDesaturatedBlue text-sm w-32 h-10 rounded-full  hover:border hover:text-neutral-White hover:bg-primary-SoftRed"
+                    type="submit"
+                  >
+                    CONTACT
+                  </button>
+                </ul>
+              </div>
             </nav>
             <h1 className="text-neutral-White text-5xl font-Fraunces uppercase tracking-widest pt-20 lg:w-11/12 mx-auto">
               we are creatives
@@ -62,13 +89,13 @@ function App() {
         <header className="flex flex-col text-center relative">
           <div className="flex flex-col z-10">
             <nav className="flex justify-between items-center p-5">
-              <img className="w-30" src={Logo} alt="logo header" />
+              <img className="w-40" src={Logo} alt="logo header" />
               <ul className="w-1/3 flex justify-around items-center text-neutral-White">
                 <li className="cursor-pointer">About</li>
                 <li className="cursor-pointer">Services</li>
                 <li className="cursor-pointer">Products</li>
                 <button
-                  className="bg-neutral-White font-Fraunces text-neutral-VeryDarkDesaturatedBlue text-sm w-32 h-10 rounded-full"
+                  className="bg-neutral-White font-Fraunces text-neutral-VeryDarkDesaturatedBlue text-sm w-32 h-10 rounded-full hover:bg-transparent hover:border hover:text-neutral-White"
                   type="submit"
                 >
                   CONTACT
@@ -97,7 +124,7 @@ function App() {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <h6 className="font-Fraunces border-b-4 border-primary-Yellow rounded-md border-opacity-40">
+          <h6 className="font-Fraunces border-b-4 border-primary-Yellow rounded-md border-opacity-40 cursor-pointer">
             LEARN MORE
           </h6>
         </div>
@@ -113,7 +140,7 @@ function App() {
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.{' '}
           </p>
-          <h6 className="font-Fraunces border-b-4 border-primary-SoftRed rounded-md border-opacity-40">
+          <h6 className="font-Fraunces border-b-4 border-primary-SoftRed rounded-md border-opacity-40 cursor-pointer">
             LEARN MORE
           </h6>
         </div>
@@ -208,15 +235,15 @@ function App() {
       <footer className="bg-primary-DarkModerateCyanFooter text-primary-FooterText flex flex-col justify-between items-center px-2 py-20">
         <img className="w-40" src={FooterLogo} alt="footer logo" />
         <ul className="flex justify-evenly items-center w-11/12 pt-8 pb-14 xl:w-5/12 xl:pt-12 xl:pb-20">
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Services</li>
-          <li className="cursor-pointer">Projects</li>
+          <li className="cursor-pointer hover:text-neutral-White">About</li>
+          <li className="cursor-pointer hover:text-neutral-White">Services</li>
+          <li className="cursor-pointer hover:text-neutral-White">Projects</li>
         </ul>
         <div className="flex justify-between items-center w-1/3 xl:w-1/6">
-          <i class="cursor-pointer text-xl fa-brands fa-square-facebook"></i>
-          <i class="cursor-pointer text-xl fa-brands fa-instagram"></i>
-          <i class="cursor-pointer text-xl fa-brands fa-twitter"></i>
-          <i class="cursor-pointer text-xl fa-brands fa-pinterest"></i>
+          <i class="cursor-pointer text-xl fa-brands fa-square-facebook hover:text-neutral-White"></i>
+          <i class="cursor-pointer text-xl fa-brands fa-instagram hover:text-neutral-White"></i>
+          <i class="cursor-pointer text-xl fa-brands fa-twitter hover:text-neutral-White"></i>
+          <i class="cursor-pointer text-xl fa-brands fa-pinterest hover:text-neutral-White"></i>
         </div>
       </footer>
     </div>

@@ -27,6 +27,10 @@ export default {
           White: 'hsl(0, 0%, 100%)',
         },
       },
+      animation: {
+        // Bounces 5 times 1s equals 5 seconds
+        'bounce-short': 'bounce 1s ease-in 1',
+      },
     },
   },
   plugins: [],
