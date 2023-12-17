@@ -1,3 +1,4 @@
+import './custom.js';
 import './App.css';
 import HeroBgMob from './assets/images/mobile/image-header.jpg';
 import HeroBgDesktop from './assets/images/desktop/image-header.jpg';
