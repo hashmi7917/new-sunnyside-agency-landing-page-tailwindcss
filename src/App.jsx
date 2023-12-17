@@ -1,4 +1,4 @@
-import './custom.js';
+import ReactDOM from 'react-dom';
 import './App.css';
 import HeroBgMob from './assets/images/mobile/image-header.jpg';
 import HeroBgDesktop from './assets/images/desktop/image-header.jpg';
@@ -21,6 +21,15 @@ import Cone from './assets/images/mobile/image-gallery-cone.jpg';
 import Cubes from './assets/images/mobile/image-gallery-sugar-cubes.jpg';
 
 function App() {
+  function openNav(e) {
+    let sidemenu = document.getElementById('sidemenu');
+    ReactDOM.findDOMNode(sidemenu).style.display = 'block';
+  }
+  function closeNav(e) {
+    let sidemenu = document.getElementById('sidemenu');
+    ReactDOM.findDOMNode(sidemenu).style.display = 'hidden';
+  }
+
   return (
     <div className="mx-auto max-w-sm md:max-w-md lg:max-w-xl xl:max-w-full shadow-xl xl:shadow-none">
       <div
@@ -42,14 +51,14 @@ function App() {
                 className="w-30"
                 src={MenuIcon}
                 alt="hamburger menu"
-                // onClick={openNav}
+                onClick={openNav}
               />
               <div
                 id="sidemenu"
                 className="hidden w-full bg-neutral-White text-neutral-VeryDarkGrayishBlue text-center px-12 py-12 absolute right-0 top-24 transition-all ease-in shadow-xl"
               >
                 <i
-                  // onClick={closeNav}
+                  onClick={closeNav}
                   className="fa-solid fa-circle-xmark absolute right-0 top-0 pr-4 pt-4 text-2xl hover:scale-110 transition-all ease-out duration-75 cursor-pointer hover:text-primary-SoftRed"
                 ></i>
 
