@@ -1,8 +1,10 @@
-# React + Vite
+# React + Vite + Tailwind
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Installation: Clone the Repo and Install Monudles Using npm install
+# Installation: Clone the Repo and Install Modules Using
+
+## npm install
 
 # Frontend Mentor - Sunnyside agency landing page solution
 

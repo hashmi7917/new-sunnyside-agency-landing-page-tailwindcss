@@ -27,7 +27,7 @@ function App() {
   }
   function closeNav(e) {
     let sidemenu = document.getElementById('sidemenu');
-    ReactDOM.findDOMNode(sidemenu).style.display = 'hidden';
+    ReactDOM.findDOMNode(sidemenu).style.display = 'none';
   }
 
   return (
