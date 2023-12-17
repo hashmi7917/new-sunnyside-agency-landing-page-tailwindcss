@@ -116,7 +116,7 @@ function App() {
               we are creatives
             </h1>
             <img
-              className="object-fill w-10 my-auto self-center pt-20 animate-bounce-short"
+              className="object-fill w-10 my-auto self-center pt-20 animate-ping-short"
               src={ArrowDown}
               alt="arrow"
             />

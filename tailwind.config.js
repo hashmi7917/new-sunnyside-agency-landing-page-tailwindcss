@@ -29,7 +29,7 @@ export default {
       },
       animation: {
         // Bounces 5 times 1s equals 5 seconds
-        'bounce-short': 'bounce 1s ease-in 1',
+        'ping-short': 'ping 1s ease-in 1',
       },
     },
   },
