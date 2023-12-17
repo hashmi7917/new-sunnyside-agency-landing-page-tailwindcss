@@ -42,14 +42,14 @@ function App() {
                 className="w-30"
                 src={MenuIcon}
                 alt="hamburger menu"
-                onClick={openNav}
+                // onClick={openNav}
               />
               <div
                 id="sidemenu"
                 className="hidden w-full bg-neutral-White text-neutral-VeryDarkGrayishBlue text-center px-12 py-12 absolute right-0 top-24 transition-all ease-in shadow-xl"
               >
                 <i
-                  onClick={closeNav}
+                  // onClick={closeNav}
                   className="fa-solid fa-circle-xmark absolute right-0 top-0 pr-4 pt-4 text-2xl hover:scale-110 transition-all ease-out duration-75 cursor-pointer hover:text-primary-SoftRed"
                 ></i>
 
