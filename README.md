@@ -39,7 +39,6 @@ Users should be able to:
 
 ![desktop](https://github.com/hashmi7917/new-sunnyside-agency-landing-page-tailwindcss/assets/38833326/4a58a26b-7e17-4221-8730-5baf84fc4ed1)
 
-<br/>
 ### Mobile
 
 ![mobile](https://github.com/hashmi7917/new-sunnyside-agency-landing-page-tailwindcss/assets/38833326/5bee32de-757d-4bb9-9fa0-ee6df8a6ec40)
