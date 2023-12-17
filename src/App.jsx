@@ -240,10 +240,10 @@ function App() {
           <li className="cursor-pointer hover:text-neutral-White">Projects</li>
         </ul>
         <div className="flex justify-between items-center w-1/3 xl:w-1/6">
-          <i class="cursor-pointer text-xl fa-brands fa-square-facebook hover:text-neutral-White"></i>
-          <i class="cursor-pointer text-xl fa-brands fa-instagram hover:text-neutral-White"></i>
-          <i class="cursor-pointer text-xl fa-brands fa-twitter hover:text-neutral-White"></i>
-          <i class="cursor-pointer text-xl fa-brands fa-pinterest hover:text-neutral-White"></i>
+          <i className="cursor-pointer text-xl fa-brands fa-square-facebook hover:text-neutral-White"></i>
+          <i className="cursor-pointer text-xl fa-brands fa-instagram hover:text-neutral-White"></i>
+          <i className="cursor-pointer text-xl fa-brands fa-twitter hover:text-neutral-White"></i>
+          <i className="cursor-pointer text-xl fa-brands fa-pinterest hover:text-neutral-White"></i>
         </div>
       </footer>
     </div>
